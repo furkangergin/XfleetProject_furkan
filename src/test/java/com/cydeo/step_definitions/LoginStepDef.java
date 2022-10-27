@@ -49,7 +49,7 @@ public class LoginStepDef {
     }
 
     @Then("Users can not login and see Invalid username or password.")
-    public void users_can_not_login_and_see_ınvalid_username_or_password() {
+    public void users_can_not_login_and_see_invalid_username_or_password() {
         String actual = loginPage.invalidCredentials.getText();
         Assert.assertEquals("Invalid user name or password.", actual);
 
@@ -57,7 +57,13 @@ public class LoginStepDef {
     @Then("{string} message should be displayed")
     public void message_should_be_displayed(String string) {
         String actual = loginPage.userNameInput.getAttribute("validationMessage");
-        System.out.println(actual);
+        Assert.assertEquals(string,actual);
+
+    }
+    @Then("{string} message should be displayed if password is empty")
+    public void message_should_be_displayed_if_password_is_empty(String string) {
+        String actual = loginPage.passwordInput.getAttribute("validationMessage");
+        Assert.assertEquals(string,actual);
     }
 
 

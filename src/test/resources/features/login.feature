@@ -27,15 +27,18 @@ Feature: Login functionality
       | storemanager51  | uyyy        |
       | cccc            | UserUser123 |
   @wip
-  Scenario Outline:  "Please fill out this field" message should be displayed if the password or username is empty
+  Scenario Outline:  "Please fill out this field" message should be displayed into username field if the username or both password and username are empty
     Given The users try to login with "<userName>" and "<password>"
     Then "Please fill out this field." message should be displayed
 
     Examples:
       | userName | password    |
       |          | UserUser123 |
-      | user1    |             |
       |          |             |
+
+    Scenario: "Please fill out this field" message should be displayed if the password is empty
+      Given The users try to login with "user1" and ""
+      Then "Please fill out this field." message should be displayed if password is empty
 
 
 
