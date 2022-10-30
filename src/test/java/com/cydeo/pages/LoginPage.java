@@ -38,5 +38,18 @@ public class LoginPage {
     @FindBy(xpath = "//div[.='Invalid user name or password.']")
     public WebElement invalidCredentials;
 
+    @FindBy(xpath = "//a[.='Forgot your password?']")
+    public WebElement forgotLink;
+
+    @FindBy(xpath = "//h2[.='Forgot Password']")
+    public WebElement forgotPage;
+
+    @FindBy(xpath = "//span[.='Remember me on this computer']")
+    public WebElement rememberMe;
+
+    @FindBy (xpath = "(//a[@class='dropdown-toggle'])[1]")
+    public WebElement profilMenu;
+
+
 
 }
