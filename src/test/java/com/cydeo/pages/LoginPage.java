@@ -20,6 +20,9 @@ public class LoginPage {
     @FindBy(id="_submit")
     public WebElement loginButton;
 
+    @FindBy(css = "h2.title")
+    public WebElement onLoginPage;
+
     @FindBy(xpath = "//h1[.='Quick Launchpad']")
     public WebElement quickLaunchpad;
 

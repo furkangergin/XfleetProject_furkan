@@ -16,7 +16,9 @@ public class LoginStepDef {
     @Given("The user on the login page")
     public void the_user_on_the_login_page() {
         Driver.getDriver().get("http://qa.xfleetsolutions.com/");
+        Assert.assertTrue(loginPage.onLoginPage.isDisplayed());
     }
+
 
     @Given("The user logs in as a {string}")
     public void the_user_logs_in_as_a(String string) {

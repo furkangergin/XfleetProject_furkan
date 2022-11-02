@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>30 Oct 2022, 14:03</td>
+      <td>02 Nov 2022, 08:32</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Login functionality</td>
-          <td      class="passed"    >9</td>
-          <td      class="failed"    >3</td>
+          <td      class="passed"    >6</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">12</td>
+          <td >0</td>
+          <td class="total">6</td>
 
+          <td  class="passed"    >2</td>
           <td >0</td>
-          <td  class="failed"    >3</td>
-          <td class="total">3</td>
+          <td class="total">2</td>
 
-          <td class="duration" data-value="29615348600">29.615</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="9626903600">9.626</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -173,7 +173,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
   <span class="name">Login functionality</span>
 
@@ -191,7 +191,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">4.042</span>
+  <span class="lead-duration duration">5.052</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -234,7 +234,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">The user on the login page</span>
 
-  <span class="lead-duration duration">4.042</span>
+  <span class="lead-duration duration">5.052</span>
 
 </div>
 
@@ -271,18 +271,19 @@ $(document).ready(function() {
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_3269396521.html">@FLTAP-769</a>
-       <a href="report-tag_3269397380.html">@FLTAP-830</a>
+       <a href="report-tag_2149507997.html">@wip</a>
+       <a href="report-tag_3269396513.html">@FLTAP-761</a>
 </div>
 
 
-  <span class="lead-duration duration">5.768</span>
+  <span class="lead-duration duration">0.603</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">All users can see their own usernames in the profile menu</span>
+  <span class="name">&quot;Please fill out this field&quot; message should be displayed into username field if the username or both password and username are empty</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -291,16 +292,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details  in ">
+  <div id="element-3" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-4">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -310,42 +311,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-4" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">The user logs in as a <span class="argument">&quot;Driver&quot;</span></span>
+  <span class="name">The users try to login with <span class="argument">&quot;&quot;</span> and <span class="argument">&quot;UserUser123&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">The user put <span class="argument">&quot;user1&quot;</span> and <span class="argument">&quot;UserUser123&quot;</span></span>
-
-  <span class="lead-duration duration">5.441</span>
+  <span class="lead-duration duration">0.534</span>
 
 </div>
 
@@ -368,11 +342,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">The users should see their <span class="argument">&quot;user1&quot;</span> in the profile menu</span>
+  <span class="name"><span class="argument">&quot;Please fill out this field.&quot;</span> message should be displayed</span>
 
-  <span class="lead-duration duration">0.326</span>
+  <span class="lead-duration duration">0.069</span>
 
 </div>
 
@@ -380,22 +354,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
-          <a>org.junit.ComparisonFailure:</a>
-      </div>
-      <div id="msg-5" class="collapse collapsable-details  in ">
-        <pre>org.junit.ComparisonFailure: expected:&lt;[user1]&gt; but was:&lt;[John Doe]&gt;
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.cydeo.step_definitions.LoginStepDef.the_users_should_see_their_in_the_profile_menu(LoginStepDef.java:109)
-	at &#10045;.The users should see their &quot;user1&quot; in the profile menu(file:///C:/Users/HP/IdeaProjects/XfleetProject_furkan/src/test/resources/features/login.feature:72)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -415,7 +373,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -427,13 +385,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-6" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.622</span>
+  <span class="lead-duration duration">1.003</span>
 
           </div>
 
@@ -442,21 +400,6 @@ $(document).ready(function() {
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-7" class="collapsable-control">
-      <a>All users can see their own usernames in the profile menu</a>
-      <a href="embeddings/embedding_-2101803521.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-7" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-2101803521.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
@@ -473,14 +416,99 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">4.509</span>
+  <span class="lead-duration duration">3.438</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-6" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">The user on the login page</span>
+
+  <span class="lead-duration duration">3.438</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3269396521.html">@FLTAP-769</a>
+       <a href="report-tag_2149507997.html">@wip</a>
+       <a href="report-tag_3269396513.html">@FLTAP-761</a>
+</div>
+
+
+  <span class="lead-duration duration">0.533</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
 
 <div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">&quot;Please fill out this field&quot; message should be displayed into username field if the username or both password and username are empty</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -514,93 +542,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">The user on the login page</span>
+  <span class="name">The users try to login with <span class="argument">&quot;&quot;</span> and <span class="argument">&quot;&quot;</span></span>
 
-  <span class="lead-duration duration">4.509</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_3269396521.html">@FLTAP-769</a>
-       <a href="report-tag_3269397380.html">@FLTAP-830</a>
-</div>
-
-
-  <span class="lead-duration duration">5.625</span>
-
-
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-10">
-
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">All users can see their own usernames in the profile menu</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-10" class="collapse collapsable-details  in ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-11">
-
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-11" class="inner-level collapse collapsable-details  in ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">The user logs in as a <span class="argument">&quot;Sales Manager&quot;</span></span>
-
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.453</span>
 
 </div>
 
@@ -623,38 +567,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">The user put <span class="argument">&quot;salesmanager101&quot;</span> and <span class="argument">&quot;UserUser123&quot;</span></span>
-
-  <span class="lead-duration duration">5.508</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then failed">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">The users should see their <span class="argument">&quot;salesmanager101&quot;</span> in the profile menu</span>
+  <span class="name"><span class="argument">&quot;Please fill out this field.&quot;</span> message should be displayed</span>
 
-  <span class="lead-duration duration">0.116</span>
+  <span class="lead-duration duration">0.079</span>
 
 </div>
 
@@ -662,22 +579,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
-          <a>org.junit.ComparisonFailure:</a>
-      </div>
-      <div id="msg-12" class="collapse collapsable-details  in ">
-        <pre>org.junit.ComparisonFailure: expected:&lt;[salesmanager101]&gt; but was:&lt;[John Doe]&gt;
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.cydeo.step_definitions.LoginStepDef.the_users_should_see_their_in_the_profile_menu(LoginStepDef.java:109)
-	at &#10045;.The users should see their &quot;salesmanager101&quot; in the profile menu(file:///C:/Users/HP/IdeaProjects/XfleetProject_furkan/src/test/resources/features/login.feature:72)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -697,7 +598,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-13">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-10">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -709,13 +610,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-13" class="inner-level collapse collapsable-details ">
+    <div id="after-10" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.574</span>
+  <span class="lead-duration duration">1.278</span>
 
           </div>
 
@@ -724,303 +625,6 @@ $(document).ready(function() {
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-14" class="collapsable-control">
-      <a>All users can see their own usernames in the profile menu</a>
-      <a href="embeddings/embedding_290711057.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-14" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_290711057.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-</div>
-
-
-  <span class="lead-duration duration">3.255</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
-
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-15" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-16" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">The user on the login page</span>
-
-  <span class="lead-duration duration">3.255</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_3269396521.html">@FLTAP-769</a>
-       <a href="report-tag_3269397380.html">@FLTAP-830</a>
-</div>
-
-
-  <span class="lead-duration duration">6.414</span>
-
-
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-17">
-
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">All users can see their own usernames in the profile menu</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-17" class="collapse collapsable-details  in ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-18">
-
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-18" class="inner-level collapse collapsable-details  in ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">The user logs in as a <span class="argument">&quot;Store Manager&quot;</span></span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">The user put <span class="argument">&quot;storemanager51&quot;</span> and <span class="argument">&quot;UserUser123&quot;</span></span>
-
-  <span class="lead-duration duration">6.268</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">The users should see their <span class="argument">&quot;storemanager51&quot;</span> in the profile menu</span>
-
-  <span class="lead-duration duration">0.146</span>
-
-</div>
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-19">
-          <a>org.junit.ComparisonFailure:</a>
-      </div>
-      <div id="msg-19" class="collapse collapsable-details  in ">
-        <pre>org.junit.ComparisonFailure: expected:&lt;[storemanager51]&gt; but was:&lt;[John Doe]&gt;
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.cydeo.step_definitions.LoginStepDef.the_users_should_see_their_in_the_profile_menu(LoginStepDef.java:109)
-	at &#10045;.The users should see their &quot;storemanager51&quot; in the profile menu(file:///C:/Users/HP/IdeaProjects/XfleetProject_furkan/src/test/resources/features/login.feature:72)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-  <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-20">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-20" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.cydeo.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)</span>
-
-  <span class="lead-duration duration">1.436</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-21" class="collapsable-control">
-      <a>All users can see their own usernames in the profile menu</a>
-      <a href="embeddings/embedding_1496609573.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-21" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_1496609573.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>

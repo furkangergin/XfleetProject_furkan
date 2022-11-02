@@ -1,51 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="34.826">
-    <testcase classname="Login functionality" name="All users can see their own usernames in the profile menu" time="11.609">
-        <failure message="expected:&lt;[user1]&gt; but was:&lt;[John Doe]&gt;" type="org.junit.ComparisonFailure">
-            <![CDATA[Given The user on the login page............................................passed
-Given The user logs in as a "Driver"........................................passed
-When The user put "user1" and "UserUser123".................................passed
-Then The users should see their "user1" in the profile menu.................failed
-
-StackTrace:
-org.junit.ComparisonFailure: expected:<[user1]> but was:<[John Doe]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.cydeo.step_definitions.LoginStepDef.the_users_should_see_their_in_the_profile_menu(LoginStepDef.java:109)
-	at ✽.The users should see their "user1" in the profile menu(file:///C:/Users/HP/IdeaProjects/XfleetProject_furkan/src/test/resources/features/login.feature:72)
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.198">
+    <testcase classname="Logout functionality" name="The user can not go to the home page again by clicking the step back button after successfully logging out" time="16.861">
+        <system-out>
+            <![CDATA[Given The user go to the login page.........................................passed
+When The user enters userName,password and click on the login button........passed
+Then User should land on the Quick Launchpad page...........................passed
+Given User click on the log out button inside profile info..................passed
+When User click to back button..............................................passed
+Then User can not go to home page...........................................passed
 ]]>
-        </failure>
-    </testcase>
-    <testcase classname="Login functionality" name="All users can see their own usernames in the profile menu 2" time="11.729">
-        <failure message="expected:&lt;[salesmanager101]&gt; but was:&lt;[John Doe]&gt;" type="org.junit.ComparisonFailure">
-            <![CDATA[Given The user on the login page............................................passed
-Given The user logs in as a "Sales Manager".................................passed
-When The user put "salesmanager101" and "UserUser123".......................passed
-Then The users should see their "salesmanager101" in the profile menu.......failed
-
-StackTrace:
-org.junit.ComparisonFailure: expected:<[salesmanager101]> but was:<[John Doe]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.cydeo.step_definitions.LoginStepDef.the_users_should_see_their_in_the_profile_menu(LoginStepDef.java:109)
-	at ✽.The users should see their "salesmanager101" in the profile menu(file:///C:/Users/HP/IdeaProjects/XfleetProject_furkan/src/test/resources/features/login.feature:72)
-]]>
-        </failure>
-    </testcase>
-    <testcase classname="Login functionality" name="All users can see their own usernames in the profile menu 3" time="11.113">
-        <failure message="expected:&lt;[storemanager51]&gt; but was:&lt;[John Doe]&gt;" type="org.junit.ComparisonFailure">
-            <![CDATA[Given The user on the login page............................................passed
-Given The user logs in as a "Store Manager".................................passed
-When The user put "storemanager51" and "UserUser123"........................passed
-Then The users should see their "storemanager51" in the profile menu........failed
-
-StackTrace:
-org.junit.ComparisonFailure: expected:<[storemanager51]> but was:<[John Doe]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.cydeo.step_definitions.LoginStepDef.the_users_should_see_their_in_the_profile_menu(LoginStepDef.java:109)
-	at ✽.The users should see their "storemanager51" in the profile menu(file:///C:/Users/HP/IdeaProjects/XfleetProject_furkan/src/test/resources/features/login.feature:72)
-]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>
