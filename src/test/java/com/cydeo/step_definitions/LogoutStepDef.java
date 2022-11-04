@@ -49,4 +49,26 @@ public class LogoutStepDef {
         String expectedTitle = Driver.getDriver().getTitle();
         Assert.assertFalse(expectedTitle.equalsIgnoreCase("Dashboard"));
     }
+    @Given("Close the open tab")
+    public void close_the_open_tab() {
+        Driver.closeDriver();
+    }
+    @When("Go to the login page")
+    public void go_to_the_login_page() {
+        BrowserUtils.sleep(2);
+        Driver.getDriver().get("http://qa.xfleetsolutions.com/");
+        BrowserUtils.sleep(3);
+    }
+    @Then("User must be logged out")
+    public void user_must_be_logged_out() {
+       //Assert.assertFalse(loginPage.quickLaunchpad.isDisplayed());
+       String expectedTitle = "Login";
+       String actualTitle = Driver.getDriver().getTitle();
+       Assert.assertEquals(expectedTitle,actualTitle);
+    }
+    @Given("The user does not do any mouse or keyboard action for three minutes")
+    public void the_user_wait_three_minutes() {
+        BrowserUtils.sleep(180);
+
+    }
 }

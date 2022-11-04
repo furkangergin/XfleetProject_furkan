@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/cydeo/step_definitions",
         dryRun = false,
-        tags = "@FLTAP-902",
+        tags = "@FLTAP-900",
         publish = false
 
 )
