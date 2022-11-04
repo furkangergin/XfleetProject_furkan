@@ -1,8 +1,7 @@
-package com.cydeo.step_definitions;
+package com.xfleet.step_definitions;
 
-import com.cydeo.pages.LoginPage;
-import com.cydeo.utilities.BrowserUtils;
-import com.cydeo.utilities.Driver;
+import com.xfleet.pages.LoginPage;
+import com.xfleet.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

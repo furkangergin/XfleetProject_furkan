@@ -1,15 +1,14 @@
-package com.cydeo.step_definitions;
+package com.xfleet.step_definitions;
 
-import com.cydeo.pages.LoginPage;
-import com.cydeo.pages.LogoutPage;
-import com.cydeo.utilities.BrowserUtils;
-import com.cydeo.utilities.Driver;
+import com.xfleet.pages.LoginPage;
+import com.xfleet.pages.LogoutPage;
+import com.xfleet.utilities.BrowserUtils;
+import com.xfleet.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
 
 public class LogoutStepDef {
 
@@ -28,6 +27,7 @@ public class LogoutStepDef {
     }
     @Then("User should land on the Quick Launchpad page")
     public void user_should_land_on_the_quick_launchpad_page() {
+       BrowserUtils.sleep(3);
        Assert.assertTrue(loginPage.quickLaunchpad.isDisplayed());
     }
     @Given("User click on the log out button inside profile info")

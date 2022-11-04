@@ -1,4 +1,4 @@
-package com.cydeo.utilities;
+package com.xfleet.utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;

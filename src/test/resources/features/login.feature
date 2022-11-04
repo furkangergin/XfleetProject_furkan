@@ -6,8 +6,8 @@ Feature: Login functionality
 
   @FLTAP-746
   Scenario Outline: Login as a "<userType>"
-    Given The user logs in as a "<userType>"
-    When The user put "<userName>" and "<password>"
+    When The user logs in as a "<userType>"
+    And The user put "<userName>" and "<password>"
     Then The user is on the "<pageSubTitle>" page
 
     Examples:
